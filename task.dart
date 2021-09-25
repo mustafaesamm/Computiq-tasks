@@ -1,8 +1,6 @@
 import 'dart:math';
 
 
-
-
 class Color {
 
   Color(this.value);
@@ -48,8 +46,7 @@ class Text extends View{
   
    var helloText = Text(id, 'Hello');
 
-  
-   print('heloo : $helloText');
+   print('hello : $helloText');
   
  }
 
@@ -57,10 +54,7 @@ class Text extends View{
 void mainss() {
   List<int> numbers = List.generate(75, (index) => Random().nextInt(10000));
 
-  /*
-    Separate even numbers from the above `numbers` list.
-    List<int> evenNumbers = ...
-  */
+  
   List<int> evenNumbers = [];
   for (final i in numbers) {
     if (i.isEven) {
